@@ -1,0 +1,49 @@
+<div id="backgroundShadow"></div>
+<div class="loader"></div>
+<div class="global-div border" id="global-index-div">
+    <div class="logo" id="logo-div">
+        <img src="img/logo-en.png" class="logo-img">
+        <div class="trig" id="trig"></div>
+    </div>
+    <div class="menu-container">
+        <div class="start-menu">
+            <button class="btn btn-right" id="btn-demo">Демо</button>
+            <button class="btn btn-right" id="btn-login">Вход</button>
+            <button class="btn btn-right" id="btn-register"> Регистрация</button>
+        </div>
+    </div>
+    <div id="text">
+        <h1>Для кого этот сайт?</h1>
+        <p>Этот сайт создан для людей, которые постоянно забывают на какой серии они
+            остановились при просмотре своего любимого сериала.</p>
+        <h1>Как работает этот сайт?</h1>
+        <p>Для того, чтобы посмотреть пример, как работает данный сайт нажмите кнопку "Демо".</p>
+        <h1>Возможности сайта</h1>
+        <p>Здесь, на сайте, вы сможете сохранять:</p>
+        <ul>
+            <li>Названия ваших сериалов</li>
+            <li>Номера текущих просматриваемых сезонов</li>
+            <li>Номера последних просмотренных серий</li>
+        </ul>
+        <h1>Как зарегистрироваться?</h1>
+        <p>Если вы решили воспользоваться данным сайтом для хранения списков ваших сериалов,
+            нажмите кнопку "Регистрация", введите данные о
+            вашем аккаунте и пользуйтесь наздоровье. :)</p>
+    </div>
+</div>
+<?php
+echo $this->partial(
+        'Saveserials\Saveserials\context.phtml'
+    );
+echo $this->partial(
+    'Saveserials\Saveserials\register.phtml',
+    array(
+         'formRegister' => $formRegister,
+         'recaptcha' => $recaptcha
+    ));
+echo $this->partial(
+    'Saveserials\Saveserials\login.phtml',
+    array(
+        'formLogin' => $formLogin
+    ));
+?>
