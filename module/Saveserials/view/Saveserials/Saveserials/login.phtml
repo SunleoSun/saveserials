@@ -1,0 +1,32 @@
+﻿<div class="border" id="border-login">
+<?php
+    echo $this->form()->openTag($formLogin);
+
+    $type = $formLogin->get('type');
+    echo $this->formHidden($type);
+
+    $nickText = $formLogin->get('nick');
+    $nickText->setLabel('Введите ваш логин:')
+             ->setLabelAttributes(array('class' => 'label'));
+    echo $this->formLabel($nickText);
+    echo $this->formText($nickText);
+
+    $pass = $formLogin->get('pass');
+    $pass->setLabel('Введите пароль:')
+            ->setLabelAttributes(array('class' => 'label'));
+    echo $this->formLabel($pass);
+    echo $this->formPassword($pass);
+
+    $saveNick = $formLogin->get('saveNick');
+    $saveNick->setLabel('Автоматический вход')
+        ->setLabelAttributes(array('class' => 'saveLoginLabel'));
+    echo $this->formLabel($saveNick, $this->formCheckbox($saveNick),'append');
+
+    echo $this->formSubmit($formLogin->get('submit'));
+
+    echo $this->formButton($formLogin->get('cancel'),'Отмена');
+
+    echo $this->form()->closeTag();
+?>
+    <div id="ajax"></div>
+</div>

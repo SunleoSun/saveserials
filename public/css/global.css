@@ -1,0 +1,421 @@
+body {
+    background-image: url('../img/foreground_aluminium.jpg') ;
+    margin: 0px;
+}
+
+.border{
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #666666;
+    box-shadow: 0px 0px 15px 2px gray;
+    background-color: rgb(240,240,240);
+    background-image: url("../img/cut1.png");
+    background-image: url("../img/cut1.png"),-webkit-gradient( linear, left top, left bottom, from(rgba(220,220,220,1)), to(rgba(210,210,210,1)), color-stop(0.5, rgba(230,230,230,1)) );
+    background-image: url("../img/cut1.png"),-webkit-linear-gradient( top, rgba(220,220,220,1), rgba(240,240,240,1) 50%, rgba(220,220,220,1) );
+    background-image: url("../img/cut1.png"),-moz-linear-gradient( top, rgba(220,220,220,1), rgba(240,240,240,1) 50%, rgba(220,220,220,1) );
+    background-image: url("../img/cut1.png"),-o-linear-gradient( top, rgba(220,220,220,1), rgba(240,240,240,1) 50%, rgba(220,220,220,1) );
+    background-image: url("../img/cut1.png"),linear-gradient(top, rgba(220,220,220,1), rgba(240,240,240,1) 50%, rgba(220,220,220,1));
+}
+
+.global-div {
+    width: 98%;
+    margin: 1%;
+    height: 1300px;
+}
+#global-context-div{
+    top: -20px;
+}
+
+#border-register{
+    width: 340px;
+    height: 510px;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -170px;
+    top: 20px;
+    display: none;
+}
+#border-login{
+    width: 340px;
+    height: 330px;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -170px;
+    top: 20px;
+    display: none;
+}
+
+h1{
+    font-size: 34pt;
+    color: #05c73e; 
+    font-family: "Adobe Garamond Pro Bold";
+    text-shadow: 0px 0px 3px black;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.btn{
+    background-image: url("../img/btn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+    text-shadow: 0px 0px 3px white;
+    border: 1px solid #595959;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 0px 3px 1px gray;
+}
+
+.btn-right{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 3px 3px #74C968;
+    cursor: default;
+}
+
+.btn-index-down{
+    box-shadow: 0px 0px 1px 0.5px gray !important;
+    width: 96%;
+    height: 38px;
+    /*margin-bottom: 22px;*/
+    margin: 0 2% 22px !important;
+}
+
+.btn-form-down{
+    box-shadow: 0px 0px 1px 0.5px gray !important;
+    width: 290px !important;
+    height: 38px !important;
+    margin: 11px auto !important;
+}
+
+.logo{
+    margin: 15px;
+    border-bottom: 2px #595959 solid;
+    min-height: 100px;
+    height: 130px;
+}
+
+.start-menu{
+    min-height: 100px;
+    position: fixed;
+    width: 20%;
+    margin-left: 20px;
+}
+.start-menu :last-child{
+    margin-bottom: 0px;
+}
+.menu-container{
+    border-left: 2px solid #595959;
+    margin: 0px 3px 3px 10px;
+    height: 86%;
+    width: 25%;
+    float: right;
+}
+#btn-login, #btn-demo, #btn-register{
+    margin-left: 125%;
+}
+
+
+
+a, p,li,.btn,.inputs{
+    font-family: "Adobe Garamond Pro";
+    font-size: 24pt;
+    color: #17af00;
+    text-decoration: none;
+}
+.inputs{
+    font-size: 21pt;
+}
+p,li{
+    text-align: justify;
+    margin: 1ex;
+    color: black;
+    margin: 20px;
+    font-size: 20pt;
+}
+
+li{
+    margin-left: 2ex;
+}
+
+.trig{
+     width : 50px;
+     height : 90px;
+     float: right;
+     margin-right: 2ex;
+     background-image: url(../img/trig-ru_cr.png);
+     background-repeat: no-repeat;
+     background-size: contain; 
+     margin-top: 15px;
+     margin-right: 3ex;
+     border-radius: 10px;
+}
+
+#logo{
+    margin-top: 20px;
+    float: left;
+}
+.logo-img{
+    display: none;
+}
+#text{
+    display: block;
+    overflow: auto;
+    height: 1100px;
+    z-index: 1;
+}
+
+.text-area{
+    background-image: url('../img/foreground_aluminium.jpg') ;
+    display: block;
+    margin: 10px auto;
+    width: 92%;
+    height: 30px;
+}
+
+.label,.saveLoginLabel{
+    font-family: "Adobe Garamond Pro";
+    font-size: 20pt;
+    color: #666666;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+.btns-register{
+    width: 300px;
+    margin: 10px auto;
+}
+
+.captcha{
+
+    margin: 10px;
+}
+
+#backgroundShadow{
+    opacity: 0.6;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    margin: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.saveLoginLabel{
+    display: block;
+    margin: 10px auto;
+}
+
+.error-message{
+    color: red;
+    font-size: 14pt;
+    display: block;
+    height: 25px;
+    text-align: center;
+}
+
+.error-message-popup{
+    position: absolute;
+    background-color: #f5f3fa;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 4px;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+}
+
+.arrow{
+    border: 4px solid transparent;
+    border-top: 8px solid red;
+    position: absolute;
+    z-index: 99;
+}
+
+.table{
+    margin: 20px 2%;
+    border: 1px grey solid;
+    width: 71%;
+    height: 1120px;
+    border-radius: 10px;
+    background: #bababa;
+    background: -moz-linear-gradient(45deg,  #bababa 0%, #e5e5e5 50%, #bababa 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#bababa), color-stop(50%,#e5e5e5), color-stop(100%,#bababa)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #bababa 0%,#e5e5e5 50%,#bababa 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #bababa 0%,#e5e5e5 50%,#bababa 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #bababa 0%,#e5e5e5 50%,#bababa 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #bababa 0%,#e5e5e5 50%,#bababa 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#bababa',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+    box-shadow: 0px 0px 3px 1px gray;
+}
+
+.table-label{
+    height: 60px;
+    width: 100px;
+    display: block;
+    float: left;
+    font-family: "Adobe Garamond Pro";
+    font-size: 16pt;
+    color: black;
+    text-align: center;
+
+}
+
+#table-label-name{
+    margin: 10px 1%;
+    width: 60%;
+}
+#table-label-season, #table-label-episode{
+    margin: 10px 0.5%;
+    width: 11%;
+}
+#table-label-delete{
+    margin: 10px 0.5%;
+    width: 10%;
+}
+
+.serial-list{
+    margin: 10px 1%;
+}
+
+.list-el{
+    margin: 10px 0px;
+    width: 100%;
+    height: 45px;
+}
+
+
+.list-text, .updown, .buttonDelete{
+    display: block;
+    float: left;
+    height: 44px;
+}
+
+.list-text{
+    font-family: "Adobe Garamond Pro";
+    font-size: 20pt;
+    color: #17af00;
+    text-decoration: none;
+    background-image: url('../img/foreground_aluminium.jpg');
+}
+
+.name-text{
+    width: 60%;
+    margin: 10px 0.5%;
+}
+
+.number-text{
+    margin: 10px 0.5%;
+    width: 6%;
+    text-align: center;
+}
+
+.updown{
+    margin: 10px 0.5%;
+    width: 5%;
+    height: 50px;
+}
+
+.buttonUp{
+    width: 100%;
+    margin: 0px 0.2% 2px;
+    display: block;
+    background-image: url('../img/btnUp.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 24px;
+}
+
+.buttonDown{
+    width: 100%;
+    margin:  2px 0.2% 0px;
+    display: block;
+    background-image: url('../img/btnDown.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 24px;
+}
+
+.buttonDelete{
+    margin: 10px 0.5%;
+    width: 6%;
+    height: 50px;
+    background-image: url('../img/btnDelete.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#greeting{
+    font-family: "Adobe Garamond Pro";
+    font-size: 15pt;
+    color: #E10B0B;
+    text-align: center;
+    border: 3px solid #595959;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.name{
+    font-style: oblique;
+}
+
+.save-popup{
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 70px;
+    opacity: 0;
+    border: 3px solid gray;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px gray;
+    z-index: 100;
+    background-color: rgb(240, 242, 209);
+    font-family: "Adobe Garamond Pro";
+    font-size: 19pt;
+    color: #07A32D;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: fixed;
+    background-image: url('../img/loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    display: none;
+    padding: 7px;
+    background-color: rgb(221, 221, 221);
+    border: 1.2px solid;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 10px;
+}
+
+.trig:hover{
+    box-shadow: 0px 0px 3px 3px #74C968;
+}
