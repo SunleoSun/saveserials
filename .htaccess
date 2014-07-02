@@ -1,5 +1,0 @@
-RewriteEngine On
-RewriteBase /
-
-RewriteRule ^(.*)(css|fonts|img|js)(/.+)$ public/$2$3 [NC,L]
-RewriteRule ^.*$ index.php [NC,L]

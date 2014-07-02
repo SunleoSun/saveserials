@@ -1,1 +1,0 @@
-php phpunit.phar  --bootstrap ../../Bootstrap.php --testdox-html=./results.html ./ > log.txt

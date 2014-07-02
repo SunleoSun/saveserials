@@ -1,3 +1,0 @@
-Saveserials\Test\Controller\SaveserialsController
- [x] Index action can be accessed
-
